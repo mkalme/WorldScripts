@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NbtEditor">
+      <HintPath>D:\Libraries\.NET Core\NbtEditor\v1.4.0\dlls\Rel64Bit\NbtEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="WorldEditor">
+      <HintPath>D:\Libraries\.NET Core\WorldEditor\v1.5.0\dlls\64BitRel\WorldEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
